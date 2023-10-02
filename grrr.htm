@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+  <header>
+    <h1 style="color: aliceblue;">box-sizing</h1>
+  </header><body>
+
+  <nav>
+    <ul>
+      <li><a href="#anker1">Lenke 1</a> </li>
+      <li><a href="#anker2">Lenke 2</a> </li>
+      <li><a href="#anker3">Lenke 3</a> </li>
+    </ul>
+    
+  </nav>    
+  <main>
+    <article>
+      <p id="anker1">This is a Test website. This means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added. For example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.</p>
+      <p id="anker2">The box-sizing property can be used to adjust this behavior, and it will blow your mind:</p>
+      <img src="IMG_9924.png" alt="Explosion on Hitra" width="40%">  <iframe src="https://exit-path.github.io" title="description" height="40%" transform: scale(5) ></iframe> 
+      <p>(Picture taken of Hitra by me.)</p>
+      <button class="button button1">Click</button>
+    <ul>
+      <li><code>content-box</code> gives you the default CSS box-sizing behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px.</li>
+      <li><code>border-box</code> tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.</li>
+      </ul>
+      <p id="anker3">It is often useful to set box-sizing to border-box to layout elements. This makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content. </p><table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Table</td>
+        </tr>
+      </table>
+    </article>
+  </main>
+  <footer><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="blank">box-sizing</a> by Mozilla Contributors is licensed under CC-BY-SA 2.5.</footer>
+</body>
+</html>

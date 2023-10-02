@@ -1,0 +1,111 @@
+{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: verdana, arial, sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 0;
+  }
+  
+  header{
+    width: 100%;
+    background-image: url(Untitled.png);
+    text-align: center;
+    height: 50px;
+  }
+  
+  nav{
+    float: left; /*Gjør at child-elementer som flyter (float), holder seg inne i boksen */
+    width: 100%;
+    background-image: url(Capture1.PNG);  
+    position:sticky; /*Gjør at menylinja fester seg til et fast punkt i vinduet når man skroller. Hvor den fester seg, angir man med top, left, right og/eller bottom, som på neste linje.*/
+    top: 0px;
+  }
+  
+  nav ul {
+    margin:0;
+    padding:0;
+  }
+  
+  nav li {
+    float: left;
+    list-style-type: none;
+    border-right: 1px solid lightslategray;
+  }
+  
+  /*CSS-regelen under gjør at den siste lenka flyter helt til høyre i vinduet i stedet for til venstre ved siden av de andre. Ta bort kommentarmarkørene for å se hvordan det virker.*/
+  /*nav li:last-child{
+    float: right;
+    border-right: none;
+    border-left: 1px solid #f06d06;
+  }*/
+  
+  nav a {
+    display: block;
+    text-decoration:none;
+    color: black;
+    padding: 1em;
+    
+  }
+  
+  nav a:hover{
+    background-color: rgb(208, 231, 236);
+    color: #646464;
+  }
+  nav2 {
+    float: left;
+    width: 120px;
+    height: 1600px;
+    background-image:url(side.png);
+    padding: 20px;
+  }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  main, footer{
+    clear:left;
+    width: 90%;
+    padding: 1em;
+    margin: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  code{
+    font-size: 1.3em;
+  }
+  
+  .button1 {
+      background-image:url(buttext.png);
+      border: 1px solid dimgray;
+      border-radius: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 12px;}
+
+  .button1:hover {
+      background-image:url(buttext1.png);
+      border: 2px solid #3dcdf0;
+      border: 1px solid #3c7fb1;
+      border-radius: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 12px;}
